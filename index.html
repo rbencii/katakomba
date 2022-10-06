@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>L705QG Beadando</title>
+</head>
+
+<body>
+    
+    <div id="ControlPanel" class="szines">
+        <h1>Varázslatos katakomba</h1>
+        <h2>L705QG</h2>
+        <span>Playercount:</span>
+        <input type="number" id="playercount" value="2" min="1" max="4">
+        <br>
+        <span id="colors">
+            <input type="color" value="#00fbff">
+            <input type="color" value="#ff00ea">
+        </span>
+        <br>
+        <span>Treasure card per player:</span>
+        <input type="number" id="treasure-per-player" value="2" min="1" max="12">
+        <br>
+        <button id="start">Start</button>
+        <br>
+        <button id="howto">Description</button>
+        <br>
+        <span id="preload">
+            Mentett állapot betöltése:
+            <button id="load2" style='opacity:20%'>Load</button>
+        </span>
+    </div>
+    <br>
+    <div id="GameField" class="rejtett">
+        <span id=scoreboard></span>
+        <canvas id="canvas" width="420" height="420">
+        </canvas>
+        <div id="winner" class="szines rejtett">
+            <span>Someone won the game!</span>
+            <br>
+            <button id="restart">Restart</button>
+        </div>
+        <canvas id="canvas2" width="540" height="540">
+        </canvas>
+        <br>
+        <div class="saveinfo szines">
+            <button id="save" class="saveload">Save</button>
+            <button id="load" class="saveload">Load</button>
+            <br>
+            A mentés csak álló helyzetben történik meg!
+        </div>
+    </div>
+    <br>
+    
+    <span id="desc" class="rejtett szines">
+        Irányítás: balklikk-betolás/lépés, jobbklikk-forgatás.<br>
+        A katakomba szobáit egy 7x7-es négyzetrács cellái jelképezik. Minden szobában adott, hogy hány falán
+        van ajtó. Ha két szomszédos szoba érintkező falán egy-egy ajtó van, akkor át lehet menni egyik szobából a
+        másikba. A négyzetrács páros sorait és oszlopait el lehet tolni, a többi szoba végig rögzített a játék során. Az
+        eltolásokkal az ajtókon keresztül utak nyílnak a szobák között, így lehet eljutni a kincsekhez. Mindegyik kérő
+        arra törekszik, hogy a katakomba szobáinak ötletes eltolásával eljusson a kincsekhez. Aki elsőként találja meg
+        mindahányat és kiindulópontjára sikeresen visszaérkezik az a nyertes.</span>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

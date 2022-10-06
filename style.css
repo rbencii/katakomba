@@ -1,0 +1,114 @@
+body{
+    margin:auto;
+    text-align: center;
+    background-image: url('./background2enhanced.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#ControlPanel{
+    padding-bottom:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#desc{
+    display:inline-block;
+    text-align: justify;
+    width: 30em;
+    margin-bottom: 2em;
+    margin-top:6em;
+    padding:10px;
+
+}
+
+.rejtett{
+    display: none;
+}
+
+.rejtett#desc{
+    display: none;
+}
+
+#GameField{
+    position: relative;
+    background-color: lightblue;
+    border-radius: 10px;
+    top:10px;
+    margin:auto;
+    height: 541px;
+    width: 541px;
+}
+
+#canvas{
+    position: absolute; 
+    left: 61px; 
+    top: 61px; 
+    z-index: 1;
+}
+
+#canvas2{
+    border: 1px solid #2d426e;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#winner{
+    position: relative;
+    top:150px;
+    z-index: 2;
+    width: 170px;
+    padding:20px;
+    margin:auto;
+}
+
+#scoreboard table{
+    width: 100%;
+    z-index: 0;
+}
+
+#scoreboard td{
+    position: relative;
+    /*background-color: rgba(255,255,255,0.2);*/
+    /*top:-20px;*/
+}
+
+#scoreboard p{
+    position:relative;
+    top:-35px;
+    z-index: 2;
+    margin-left:auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.saveload{
+    /*position:absolute; 
+    top:545px;
+
+    padding:10px;
+    border: 1px solid #6e2d69;
+    border-radius: 20px;
+    background-color:#FFC7FA;*/
+    margin-bottom: 10px;
+}
+
+.saveinfo{
+    position:absolute; 
+    top:560px;
+    left:132px;  
+    padding:15px;
+}
+
+.szines{
+
+    border: 1px solid #2d426e;
+    border-radius: 10px;
+    background-color:#ffffffc4;
+}
