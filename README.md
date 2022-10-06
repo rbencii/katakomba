@@ -5,5 +5,5 @@ A katakomba szobáit egy 7x7-es négyzetrács cellái jelképezik. Minden szobá
 
 Játszható: https://rbencii.github.io/katakomba/
 
-
+![katakombapreview](https://user-images.githubusercontent.com/83843622/194319134-b3b6f808-5a21-4d2d-8b26-9f99c900854e.gif)
 ![image](https://user-images.githubusercontent.com/83843622/194311162-7c18850d-409f-4949-b3d6-18660e4c8b2c.png)
